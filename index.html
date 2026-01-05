@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human-Centered AI Research Portfolio</title>
+    <meta name="description" content="Portfolio of a Human-Centered AI / HCI / HRI researcher.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary: #26384D;
+            --secondary: #F4F6FA;
+            --accent: #3564AD;
+            --card-bg: #fff;
+            --border-radius: 10px;
+            --transition: 0.2s;
+            --shadow: 0 2px 8px rgba(38,56,77,0.06);
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: var(--secondary);
+            color: var(--primary);
+            margin: 0;
+            padding: 0;
+            font-size: 1.05rem;
+        }
+
+        header {
+            background: var(--card-bg);
+            border-bottom: 1px solid #e3e4e6;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin: 0 0 .5rem 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #567;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0 auto;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.6rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+            padding: 0.3rem 0.8rem;
+            border-radius: 5px;
+            transition: background var(--transition);
+        }
+
+        nav a:hover, nav a:focus {
+            background: #e8eef7;
+        }
+
+        main {
+            max-width: 920px;
+            margin: 2.5rem auto 0 auto;
+            padding: 0 1.2rem;
+        }
+
+        section {
+            margin-bottom: 2.8rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1.1rem;
+            color: var(--accent);
+        }
+
+        /* Card Styles */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 1.5rem 1.4rem;
+            border: 1px solid #e8e8e8;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card h3 {
+            font-size: 1.08rem;
+            font-weight: 600;
+            margin: 0 0 0.7em 0;
+            color: var(--primary);
+        }
+
+        /* Expand/Collapse */
+        details {
+            margin-top: 1em;
+        }
+
+        details[open] summary:after {
+            content: "▲";
+            float: right;
+            font-size: 0.9em;
+        }
+
+        details summary:after {
+            content: "▼";
+            float: right;
+            font-size: 0.9em;
+        }
+
+        summary {
+            font-weight: 500;
+            outline: none;
+            cursor: pointer;
+            background: #f0f3fb;
+            padding: 0.5em 0.8em;
+            border-radius: 6px;
+            user-select: none;
+        }
+
+        /* Publication Styles */
+        ul.publications {
+            padding-left: 1.2em;
+        }
+
+        ul.publications li {
+            margin-bottom: 0.7em;
+            line-height: 1.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 540px) {
+            header h1 {
+                font-size: 1.3rem;
+            }
+            h2 {
+                font-size: 1.08rem;
+            }
+            main {
+                padding: 0 0.3rem;
+            }
+        }
+
+        /* CV & Contact */
+        .cv-link {
+            display: inline-block;
+            margin-top: 0.5em;
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin-top: 0.7em;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="home" aria-labelledby="home-heading" class="home-section">
+      
+    <header>
+        <h1>Portfolio: Human-Centered AI Researcher</h1>
+        <p>Research in HCI, HRI, and Information Science &mdash; Building ethical, interactive, and explainable AI systems</p>
+        <!-- <nav>
+            <ul>
+                <li><a href="#home" aria-label="Home section">Home</a></li>
+                <li>
+                    <a href="#research">
+                      <span class="nav-nowrap">Research &amp; Systems</span>
+                    </a>
+                </li>
+                <li><a href="#design" aria-label="Design section">Design</a></li>
+                <li><a href="#publications" aria-label="Publications section">Publications</a></li>
+                <li><a href="#cv" aria-label="CV section">CV</a></li>
+                <li><a href="#contact" aria-label="Contact section">Contact</a></li>
+            </ul>
+        </nav> -->
+        <nav>
+            <ul class="nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#research">Research &amp; Systems</a></li>
+              <li><a href="#publications">Publications</a></li>
+              <li><a href="#cv">CV</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          
+    </header>
+    <main>
+        <!-- HOME -->
+        <section id="home" aria-labelledby="home-heading" class="home-layout">
+            <div class="home-layout__text">
+            <h2 id="home-heading">Home</h2>
+            
+            <p>
+                I am a <strong>Human-Centered AI Researcher and Applied AI/ML Engineer</strong>
+                building multimodal, real-time AI systems that integrate language models,
+                computer vision, and interactive interfaces for deployment in robotics,
+                AR/VR, and human-facing applications.
+              </p>
+              
+              <p>
+                My research focuses on designing and evaluating embodied and immersive AI
+                systems, such as social robots, generative interfaces, and adaptive agents
+                that coordinate language, perception, and interaction to support trust,
+                collaboration, and human sensemaking in real-world contexts. This work spans
+                Human-Computer Interaction, Human-Robot Interaction, and Information Science
+                perspectives on information mediation, communication, and social intelligence.
+              </p>
+              
+              <p>
+                <strong>Research interests:</strong>
+                Human-centered and embodied AI · Multimodal interaction · Generative and
+                adaptive agents · Information mediation and personalization · Social and
+                collaborative intelligence
+              </p>
+              
+            </div>
+            <div class="home-layout__photo">
+                <img
+                  src="assets/Me.jpeg"
+                  alt="Akash Reddy Mallepally"
+                />
+              </div>
+        </section>
+        
+        
+
+        <!-- RESEARCH & SYSTEMS -->
+        <section id="research" aria-labelledby="research-heading">
+            <h2 id="research-heading">Research &amp; Systems</h2>
+            <div class="card-grid" role="list">
+                <!-- CARD 1 -->
+                <article class="card" role="listitem">
+                    <h3>
+                        Multimodal Human–Urban Robot Interaction Interface ·
+                        <span class="status-tag"> Paper Accepted - Proceedings Forthcoming · Ongoing Extended Study</span>
+                    </h3>
+                
+                    <p class="project-focus">
+                        <strong>Focus:</strong> Multimodal information mediation and adaptive decision-making in embodied systems.
+                    </p>
+                    <img src="assets/Proj1_Thumbnail.png"
+                    alt="User interacting with a robot through a virtual reality interface with language-based control"
+                    class="project-thumbnail">
+
+                    <p class="project-stack">
+                        <strong>Tech Stack:</strong>
+                        Python · PyTorch · C# · GPT-4o (OpenAI API) · Whisper (ASR) · EfficientNet-B0 · YOLOv11 · Websocket · Unity (VR) · Meta Quest Pro
+                    </p>
+                      
+                
+                    <h4>AI / ML Engineering Summary</h4>
+                
+                    <h5>AI / ML Focus</h5>
+                    <ul>
+                        <li><strong>Large Language Model (GPT-4o-mini)</strong> for decision making and command parsing</li>
+                        <li><strong>CNN (EfficientNet-B0)</strong> for facial expression–based engagement recognition</li>
+                        <li><strong>YOLOv11</strong> for real-time object detection and scene analysis</li>
+                    </ul>
+                
+                    <h5>Learning Paradigm</h5>
+                    <ul>
+                        <li>Transfer learning and fine-tuning for engagement recognition</li>
+                        <li>Prompt-engineered LLM inference</li>
+                        <li>Emphasis on system-level learning, model orchestration,
+                            and inference-time adaptation rather than standalone model training.
+                            </li>
+                    </ul>
+                
+                    <h5>Data Modalities</h5>
+                    <ul>
+                        <li>RGB images (scene and avatar face)</li>
+                        <li>Speech (ASR via Whisper)</li>
+                        <li>Text (LLM inputs and outputs)</li>
+                    </ul>
+                
+                    <h5>Inference Constraints</h5>
+                    <ul>
+                        <li>Real-time interaction</li>
+                        <li>Low-latency decision making</li>
+                        <li>Continuous perception–action loop</li>
+                    </ul>
+                
+                    <h5>Engineering & Systems</h5>
+                    <ul>
+                        <li><strong>Pipeline:</strong> Speech → ASR → LLM controller ← (engagement + scene analysis) → robot command generation</li>
+                        <li><strong>Integration:</strong> Unity-based VR interface, OpenAI APIs, CV models, robot control abstraction</li>
+                        <li><strong>Deployment:</strong> VR digital twin validated on a physical robot arm (Reactor RX200)</li>
+                    </ul>
+                    <!-- <img src="assets/Proj1_Supporting_new.png"
+                        alt="System architecture showing VR interface, engagement recognition, scene analysis, and LLM-based robot control"
+                        class="project1-artifact">
+
+                    <p class="image-caption">
+                        Multimodal system architecture integrating VR, engagement recognition, scene analysis, and LLM-based decision making.
+                    </p> -->
+
+                
+                    <h5>Evaluation</h5>
+                    <ul>
+                        <li>Engagement classification accuracy (up to ~76% after thresholding)</li>
+                        <li>Task completion correctness</li>
+                        <li>Qualitative interaction fluency</li>
+                    </ul>
+                
+                    <h5>Baselines</h5>
+                    <ul>
+                        <li>Pre-trained emotion recognition model</li>
+                        <li>Non-adaptive, command-only robot behavior</li>
+                    </ul>
+                
+                    <h5>Scale</h5>
+                    <ul>
+                        <li>Real-time user interaction scenarios</li>
+                        <li>Multi-stage fine-tuning experiments with incremental test sets</li>
+                    </ul>
+                
+                    <p class="project-links">
+                        <a href="assets/MultimodalHRI-ASCE-i3CE-2025.pdf"
+                        target="_blank"
+                        rel="noopener">
+                        Paper
+                        </a> ·
+                        
+                        <a href="https://www.linkedin.com/posts/virginia-tech_virginiatech-activity-7305249001572913153-nTCW/"
+                        target="_blank"
+                        rel="noopener">
+                        Demo
+                        </a> ·
+
+                        <a href="https://github.com/akki8602/VR-CV-LLM-Based-Robot-Interface"
+                        target="_blank"
+                        rel="noopener">
+                        Code (in progress)
+                        </a>
+
+                    </p>
+                
+                    <details>
+                        <summary>Research Narrative</summary>
+                        <div class="research-narrative">
+                            <p>
+                                <strong>Problem.</strong>
+                                Robotic systems deployed in domestic and urban environments are typically command-driven and lack awareness of user engagement, emotional state, and situational context. As a result, corrections are often reactive rather than proactive, leading to task inefficiencies, user frustration, and reduced perception of robot intelligence during collaboration.
+                            </p>
+                
+                            <p>
+                                <strong>Research Question.</strong>
+                                How can a multimodal interaction framework that combines language, vision-based engagement recognition, and immersive interfaces enable proactive, human-aware robot behavior and improve task fluency and user experience in human–robot collaboration?
+                            </p>
+                
+                            <p>
+                                <strong>Approach.</strong>
+                                This work presents a human-centric multimodal interaction framework integrating Virtual Reality, computer vision, and large language models. A VR environment serves as a low-workload communication interface, while a CNN-based engagement recognition module infers user state from facial expressions. In parallel, a YOLO-based scene analysis module tracks object states and task progress. These perceptual signals are aggregated and fed into a prompt-engineered LLM that functions as a central controller, dynamically deciding when to intervene, ask clarifying questions, or translate user intent into executable robot actions.
+                            </p>
+                
+                            <p>
+                                <strong>Outcome & Implications.</strong>
+                                The system demonstrates the feasibility of proactive, engagement-aware robot collaboration, producing smoother task progression and more natural interaction compared to passive command-based baselines. Beyond the working prototype and live demo, this research contributes a flexible, robot-agnostic interaction architecture that advances human-centered AI design in HRI and informs future deployments in assistive, domestic, and urban robotic systems.
+                            </p>
+                        </div>
+                    </details>
+                </article>
+                
+                
+                <!-- CARD 2 -->
+                <article class="card" role="listitem">
+                    <h3>
+                        Generative AI–Driven Biophilic AR for Senior Living ·
+                        <span class="status-tag">Paper Accepted - Proceedings Forthcoming · Ongoing Extended Study</span>
+                    </h3>
+                    <p class="project-focus">
+                        <strong>Focus:</strong> Personalized information experiences and well-being through generative and immersive systems.
+                    </p>
+                    <img
+                    src="assets/Proj2_Thumbnail.png"
+                    alt="Participant creating a personalized biophilic AR environment using a tablet-based application"
+                    class="project-thumbnail"
+                    />
+                    <p class="project-stack">
+                        <strong>Tech Stack:</strong>
+                        C# · GPT-4 · Vision-Language Models · Image-to-3D Pipelines · Prompt-Engineering · MeshyAI · Unity (AR Foundation)
+                      </p>
+                      
+                    <h4>AI / ML Engineering Summary</h4>
+                
+                    <h5>AI / ML Focus</h5>
+                    <ul>
+                        <li><strong>Large Language Model (GPT-4)</strong> for prompt-driven generative design reasoning</li>
+                        <li>Vision-language generative models for biophilic image synthesis</li>
+                        <li>AI-based 3D model generation via image-to-3D pipelines</li>
+                    </ul>
+                
+                    <h5>Learning Paradigm</h5>
+                    <ul>
+                        <li>Prompt-engineered inference (Chain-of-Thought, Few-Shot, Self-Evaluation)</li>
+                        <li>No task-specific fine-tuning; emphasis on controllability and consistency</li>
+                    </ul>
+                
+                    <h5>Data Modalities</h5>
+                    <ul>
+                        <li>Text: biophilic design prompts and user preferences</li>
+                        <li>Images: 2D biophilic object renderings</li>
+                        <li>3D assets: AR-ready models</li>
+                    </ul>
+                
+                    <h5>Inference Constraints</h5>
+                    <ul>
+                        <li>Interactive design iteration</li>
+                        <li>Real-time rendering on mobile and tablet AR devices</li>
+                        <li>Low cognitive and interaction load for older adults</li>
+                    </ul>
+                
+                    <h5>Engineering & Systems</h5>
+                    <ul>
+                        <li>
+                            <strong>Pipeline:</strong>
+                            Biophilic knowledge grounding → LLM-based concept generation → image synthesis →
+                            AI-based 3D model generation → Unity AR deployment
+                        </li>
+                        <!-- <figure class="project-figure">
+                            <img
+                              src="assets/Proj2_Supporting.png"
+                              alt="Generative AI pipeline translating biophilic design prompts into images and AR-ready 3D models"
+                              class="project1-artifact"
+                            />
+                            <figcaption>
+                              Structured generative pipeline translating biophilic design principles into AR-ready 3D assets
+                              via prompt engineering, image synthesis, and AI-based 3D model generation.
+                            </figcaption>
+                          </figure> -->
+                          
+                        <li>
+                            <strong>Integration:</strong>
+                            GPT-4 for generative reasoning, image generation models, MeshyAI for 3D asset creation,
+                            Unity with AR Foundation
+                        </li>
+                        <li>
+                            <strong>Deployment:</strong>
+                            Tablet-based AR system designed for accessibility and real-world senior living contexts
+                        </li>
+                    </ul>
+                
+                    <h5>Evaluation</h5>
+                    <ul>
+                        <li>Cognitive performance measured via Stroop test reaction times</li>
+                        <li>Affective response assessed using PANAS surveys</li>
+                        <li>Subjective usability and environmental perception via Likert-scale questionnaires</li>
+                    </ul>
+                
+                    <h5>Baselines</h5>
+                    <ul>
+                        <li>Non-biophilic AR condition (control)</li>
+                        <li>Pre-intervention baseline measurements</li>
+                    </ul>
+                
+                    <h5>Scale</h5>
+                    <ul>
+                        <li>Pilot study with older adult participants</li>
+                        <li>Multi-stage within-subject experimental protocol</li>
+                    </ul>
+                
+                    <p class="project-links">
+                        <a href="assets/Biophilic AR.pdf"
+                        target="_blank"
+                        rel="noopener">
+                        Paper
+                        </a> ·
+                        <a href="https://www.youtube.com/live/q9qyutO3_0c?si=lVmr6iSgNQZNxizW"
+                        target="_blank"
+                        rel="noopener">
+                        Demo
+                        </a> ·
+                        <a href="#" target="_blank">Code (In Progress)</a>
+                    </p>
+                
+                    <details>
+                        <summary>Research Narrative</summary>
+                        <div class="research-narrative">
+                            <p>
+                                <strong>Problem.</strong>
+                                While biophilic design has been shown to improve well-being among older adults,
+                                its adoption in senior living environments is often generic, costly, and difficult
+                                to personalize to individual cognitive, sensory, and mobility needs. Physical
+                                biophilic interventions are also challenging to retrofit into existing facilities.
+                            </p>
+                
+                            <p>
+                                <strong>Research Question.</strong>
+                                How can generative AI and augmented reality be combined to create personalized,
+                                accessible biophilic environments for older adults, and what cognitive and emotional
+                                impacts do such virtual biophilic spaces have compared to non-biophilic conditions?
+                            </p>
+                
+                            <p>
+                                <strong>Approach.</strong>
+                                This work introduces a generative AI–supported AR system that operationalizes
+                                biophilic design principles through a structured, four-stage prompting pipeline
+                                encompassing knowledge grounding, concept generation, image synthesis, and AI-based
+                                3D model creation. The resulting AR-ready assets are integrated into a Unity-based
+                                mobile application that enables older adults to place and explore biophilic elements
+                                within their physical environment using familiar touchscreen interactions.
+                            </p>
+                
+                            <p>
+                                <strong>Outcome & Implications.</strong>
+                                Results from a pilot study indicate positive user engagement, favorable emotional
+                                responses, and perceived restorative qualities of biophilic AR environments.
+                                Beyond the working prototype, this research contributes a reproducible AI-driven
+                                design framework for scalable, personalized biophilic interventions. A larger,
+                                community-based empirical study is currently underway to further evaluate long-term
+                                cognitive and well-being outcomes.
+                            </p>
+                        </div>
+                    </details>
+                </article>
+                
+                <!-- CARD 3 -->
+                <article class="card" role="listitem">
+                    <h3>
+                        Adaptive Agent Humor for Embodied Social Robots via Dual-LLM Dynamic Prompt Editing ·
+                        <span class="status-tag">In Progress · Demo & Paper in Preparation</span>
+                    </h3>
+                
+                    <p class="project-focus">
+                        <strong>Focus:</strong> Adaptive social communication and information pragmatics in embodied human–AI interaction.
+                    </p>
+                      
+                    <img src="assets/milo_robot.jpg"
+                    alt="User interacting with a robot through a virtual reality interface with language-based control"
+                    class="project-thumbnail">
+
+                    <p class="project-stack">
+                        <strong>Tech Stack:</strong>
+                        Python · Java · Dual-LLM Architecture · Llama Family Models · Websocket · Prompt Editing Pipelines · Prompt-Engineering · Reinforcement Learning (in progress) · Robot TTS
+                      </p>
+                      
+                
+                    <h4>AI / ML Engineering Summary</h4>
+                
+                    <h5>AI / ML Focus</h5>
+                    <ul>
+                        <li>
+                            <strong>Core capability:</strong>
+                            Adaptive humor generation for embodied agents as a component of socially intelligent interaction
+                        </li>
+                        <li>
+                            <strong>Dual-LLM architecture:</strong>
+                            <ul>
+                                <li>Generator LLM for humorous dialogue and improvised responses</li>
+                                <li>Editor / Controller LLM for dynamic prompt editing to regulate humor style, timing, and persona consistency</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Reinforcement Learning policy model (in progress) for learning adaptive prompt-editing strategies
+                        </li>
+                    </ul>
+                
+                    <h5>Learning Paradigm</h5>
+                    <ul>
+                        <li>Online prompt adaptation at inference time</li>
+                        <li>Human-in-the-loop feedback during live interaction</li>
+                        <li>Reinforcement learning (under development) for humor personalization and adaptation policies</li>
+                    </ul>
+                
+                    <h5>Data Modalities</h5>
+                    <ul>
+                        <li>Text: dialogue history, humor prompts, persona constraints</li>
+                        <li>Interaction metadata: conversational state, timing, interruptions</li>
+                        <li>Human response signals: laughter, engagement, confusion, trust-related cues</li>
+                    </ul>
+                
+                    <h5>Inference Constraints</h5>
+                    <ul>
+                        <li>Real-time latency suitable for live embodied interaction</li>
+                        <li>Persona consistency across conversational turns</li>
+                        <li>Safe degradation and recovery from humor failure</li>
+                    </ul>
+                
+                    <h5>Engineering & Systems</h5>
+                    <ul>
+                        <li>
+                            <strong>Pipeline:</strong>
+                            Embodied interaction context capture → prompt editing by controller LLM →
+                            constrained humor generation → safety and timing filters →
+                            robot speech and gesture output → feedback logging for learning
+                        </li>
+                        <li>
+                            <strong>Integration:</strong>
+                            Embodied social robot platforms, text-to-speech, expressive gesture modules,
+                            Wizard-of-Oz and semi-autonomous control modes
+                        </li>
+                        <li>
+                            <strong>Deployment:</strong>
+                            Live comedy and improvisational performances, lab-based HRI studies,
+                            and semi-structured social interactions
+                        </li>
+                    </ul>
+                
+                    <h5>Evaluation</h5>
+                    <ul>
+                        <li>Perceived funniness and engagement</li>
+                        <li>Trust, likability, and social presence</li>
+                        <li>Willingness to interact and collaborate</li>
+                        <li>Robustness to humor failure and recovery behavior</li>
+                    </ul>
+                
+                    <h5>Baselines</h5>
+                    <ul>
+                        <li>Static single-LLM prompting</li>
+                        <li>Fixed or human-written comedic scripts</li>
+                        <li>Neutral, non-humorous agent dialogue</li>
+                    </ul>
+                
+                    <h5>Scale</h5>
+                    <ul>
+                        <li>Repeated interaction sessions with small-to-medium participant groups</li>
+                        <li>Emphasis on qualitative behavioral signals</li>
+                        <li>Longitudinal analysis of humor adaptation and persona consistency</li>
+                    </ul>
+                
+                    <p class="project-links">
+                        <a href="#" target="_blank">Demo (coming soon)</a> ·
+                        <a href="#" target="_blank">Paper (in preparation)</a>
+                    </p>
+                
+                    <details>
+                        <summary>Research Narrative</summary>
+                        <div class="research-narrative">
+                            <p>
+                                <strong>Problem.</strong>
+                                Humor plays a critical role in human social interaction, requiring contextual awareness,
+                                timing, and adaptation. Despite advances in conversational AI, current embodied agents
+                                struggle to deploy humor effectively in real-time social settings, often appearing rigid,
+                                inappropriate, or socially unaware.
+                            </p>
+                
+                            <p>
+                                <strong>Research Question.</strong>
+                                How can embodied AI agents use adaptive, personalized humor to improve perceived humanness,
+                                trust, and social acceptance during human–robot interaction?
+                            </p>
+                
+                            <p>
+                                <strong>Approach.</strong>
+                                This project investigates humor as a marker of advanced social agency by deploying a
+                                Dual-LLM dynamic prompt-editing architecture in embodied social robots. One language model
+                                generates humorous dialogue, while a second model continuously edits prompts based on
+                                interaction context, persona constraints, and observed user responses. The system is
+                                evaluated in both live performance and laboratory settings, treating real-time human
+                                reaction as a central signal for adaptation. Reinforcement learning is being developed
+                                to optimize humor personalization policies over repeated interactions.
+                            </p>
+                
+                            <p>
+                                <strong>Outcome & Implications.</strong>
+                                Early findings suggest that adaptive humor can enhance engagement, trust, and perceived
+                                social intelligence in embodied agents while enabling recovery from interaction breakdowns.
+                                This work contributes design and evaluation insights for socially intelligent robots and
+                                positions humor as a meaningful testbed for studying adaptive, human-aligned behavior in
+                                interactive AI systems.
+                            </p>
+                        </div>
+                    </details>
+                </article>
+                
+            </div>
+        </section>
+
+        <!-- DESIGN -->
+        <!-- <section id="design" aria-labelledby="design-heading">
+            <h2 id="design-heading">Design</h2>
+            <p>
+                Overview of research-led design approaches. Placeholder for system and interface design artifacts related to human-centered AI and HRI.
+            </p>
+            <div class="card-grid" role="list">
+                <article class="card" role="listitem">
+                    <h3>Design Artifact 1</h3>
+                    <p>Placeholder area for sketches, prototypes, or UI screenshots connected to ongoing research.</p>
+                </article>
+                <article class="card" role="listitem">
+                    <h3>Design Artifact 2</h3>
+                    <p>Placeholder for artifact representing participatory or co-design session outcomes.</p>
+                </article>
+                <article class="card" role="listitem">
+                    <h3>Design Artifact 3</h3>
+                    <p>Placeholder for system architecture diagrams or workflow mockups.</p>
+                </article>
+            </div>
+        </section> -->
+
+        <!-- PUBLICATIONS -->
+        <section id="publications" aria-labelledby="publications-heading">
+            <h2 id="publications-heading">Publications</h2>
+        
+            <ul class="publications">
+                <li>
+                    <strong>
+                        Generative AI and Augmented Reality for Personalized Biophilic Design in Senior Living Environments
+                    </strong>
+                    <br>
+                    <em>ASCE Construction Research Congress (CRC) 2026</em> — Accepted
+                    <br>
+                    Akash Reddy Mallepally, Ruichuan Zhang, Tanyel Bulbul
+                </li>
+        
+                <li>
+                    <strong>
+                        Multimodal Human–Urban Robot Interaction Interface Using Large Language Models,
+                        Computer Vision, and Virtual Reality
+                    </strong>
+                    <br>
+                    <em>ASCE Computing in Civil Engineering (i3CE) 2025</em>, New Orleans, May 2025 — Presented
+                    <br>
+                    Akash Reddy Mallepally, Hongrui Yu
+                </li>
+            </ul>
+        </section>
+        
+
+        <!-- CV -->
+        <section id="cv" aria-labelledby="cv-heading">
+            <h2 id="cv-heading">Curriculum Vitae</h2>
+        
+            <p>
+                <a class="cv-link"
+                   href="assets/Mallepally__Akash_Reddy_CV_.pdf"
+                   target="_blank"
+                   rel="noopener">
+                    View CV (PDF)
+                </a>
+            </p>
+        </section>
+        
+
+        <!-- CONTACT -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <div class="contact-info">
+                <div>Email: mallepally@vt.edu</div>
+                <div>Affiliation: Virginia Polytechnic Institute and State University (Virginia Tech)</div>
+                <div>Location: Blacksburg, VA, USA</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
